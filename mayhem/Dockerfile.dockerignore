@@ -1,0 +1,14 @@
+# Build outputs never belong in the image context (mayhem/build.sh recreates them).
+mayhem/out/
+/gbc_rom
+/gbc_rom-standalone
+/gbc_state
+/gbc_state-standalone
+/gba_patch
+/gba_patch-standalone
+/lynx_rom
+/lynx_rom-standalone
+/snes_rom
+/snes_rom-standalone
+/snes_state
+/snes_state-standalone

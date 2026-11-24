@@ -1,0 +1,9 @@
+project: savantenvs/emu-ex-plus-alpha
+target: gbc-rom
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/gbc-rom/testsuite
+cmds:
+  - cmd: /mayhem/gbc_rom
+    libfuzzer: true
+    timeout: 10

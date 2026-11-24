@@ -1,0 +1,9 @@
+project: savantenvs/emu-ex-plus-alpha
+target: snes-state
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/snes-state/testsuite
+cmds:
+  - cmd: /mayhem/snes_state
+    libfuzzer: true
+    timeout: 10
